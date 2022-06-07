@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/alex_brush"
+        android:gravity="center"
+        android:text="User"
+        android:textColor="#DD2C00"
+        android:textSize="60sp" />
+    <ListView
+        android:id="@+id/listUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/butcherman"
+        android:gravity="center"
+        android:text="Nội dung chat"
+        android:textColor="@color/teal_200"
+        android:textSize="50sp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/listChat"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:id="@+id/edtContent"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/add"
+            android:background="@null"
+            android:id="@+id/imgAdd"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/imgSend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/send"
+            android:background="@null"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+</LinearLayout>
